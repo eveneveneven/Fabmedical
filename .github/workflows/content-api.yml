@@ -1,3 +1,4 @@
+
 name: content-api
 
 # This workflow is triggered on push to the 'content-web' directory of the  main branch of the repository
@@ -14,9 +15,9 @@ on:
 # Environment variables are defined so that they can be used throughout the job definitions.
 env:
   imageRepository: 'content-api'
-  resourceGroupName: 'fabmedical-[DeploymentID]'
-  containerRegistryName: 'acr[DeploymentID]'
-  containerRegistry: 'acr[DeploymentID].azurecr.io'
+  resourceGroupName: 'fabmedical-500493'
+  containerRegistryName: 'acr500493'
+  containerRegistry: 'acr500493.azurecr.io'
   dockerfilePath: './content-api'
   tag: '${{ github.run_id  }}'
 
